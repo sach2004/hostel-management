@@ -1,0 +1,42 @@
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String 
+  role      Role     @default(USER)
+  requests  Request[]
+}
+
+model Request {
+  id        Int      @id @default(autoincrement())
+  reason    String
+  status    Status   @default(PENDING)
+  createdAt DateTime @default(now())
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id])
+  checkin  String
+  checkout String
+}
+
+enum Role {
+  USER
+  WARDEN
+}
+
+enum Status {
+  PENDING
+  APPROVED
+  REJECTED
+}
