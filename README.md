@@ -39,3 +39,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 =======
 "# hostel-management" 
 >>>>>>> 37cf247e240e3c14044ee6ade5214dbaac4cc82e
+"# hostel-management" 
