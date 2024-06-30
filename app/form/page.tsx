@@ -37,7 +37,10 @@ const Form: React.FC = () => {
     try {
       const response = await axios.post('/api/form', formData); 
       console.log(response.data);
+<<<<<<< HEAD
       alert("Form Submitted!!")
+=======
+>>>>>>> 37cf247e240e3c14044ee6ade5214dbaac4cc82e
     } catch (error) {
       console.error('Error submitting form:', error);
     }
@@ -50,7 +53,11 @@ const Form: React.FC = () => {
 
 
   return (
+<<<<<<< HEAD
     <div className="flex min-h-screen bg-gray-100">
+=======
+    <div className="flex h-screen bg-gray-100">
+>>>>>>> 37cf247e240e3c14044ee6ade5214dbaac4cc82e
       
       <Sidebar />
       <div className="flex flex-col flex-1">

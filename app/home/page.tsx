@@ -20,7 +20,11 @@ const Home: React.FC = async () => {
 
   
   return (
+<<<<<<< HEAD
     <div className="flex min-h-screen bg-gray-100">
+=======
+    <div className="flex h-screen bg-gray-100">
+>>>>>>> 37cf247e240e3c14044ee6ade5214dbaac4cc82e
       <Sidebar />
       <div className="flex flex-col flex-1">
         <Header session={session} />

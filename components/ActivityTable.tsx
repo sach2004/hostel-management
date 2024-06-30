@@ -27,7 +27,10 @@ const ActivityTable: React.FC = () => {
     try {
       const response = await axios.post('/api/auth/activitiesReject', {id : userId})
       console.log("Success", response.data)
+<<<<<<< HEAD
       alert("Reject response sent to user!!")
+=======
+>>>>>>> 37cf247e240e3c14044ee6ade5214dbaac4cc82e
     } catch (error) {
       console.log(error)
     }
@@ -42,7 +45,10 @@ const ActivityTable: React.FC = () => {
     try {
       const response = await axios.post('/api/auth/activitiesAccept', { id : userId });
       console.log('Success:', response.data);
+<<<<<<< HEAD
       alert("Accept response sent to user!!")
+=======
+>>>>>>> 37cf247e240e3c14044ee6ade5214dbaac4cc82e
     } catch (error) {
       console.error('Error:', error);
     }

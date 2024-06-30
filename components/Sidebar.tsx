@@ -4,8 +4,12 @@ import { FaHome, FaUsers, FaBed, FaBook } from "react-icons/fa";
 
 const Sidebar: React.FC = () => {
   return (
+<<<<<<< HEAD
     <div className="min-h-screen w-[120px] bg-purple-700 text-white flex flex-col">
 
+=======
+    <div className="h-full w-[120px] bg-purple-700 text-white flex flex-col">
+>>>>>>> 37cf247e240e3c14044ee6ade5214dbaac4cc82e
       <div className="p-4 text-center">
         <h2 className="text-2xl font-bold">Hostel Hub</h2>
       </div>
